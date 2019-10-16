@@ -12,7 +12,7 @@ The sensor used was based on a IR Sender and receiver. The PWM on the sender was
 [Schematics Here](https://github.com/JohanpG/latinbot-official-timer/blob/master/Schematics/sender.pdf)
 
 
-## Sender
+## Receiver
 
 [Schematics Here](https://github.com/JohanpG/latinbot-official-timer/blob/master/Schematics/receiver.pdf)
   
