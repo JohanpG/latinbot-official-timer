@@ -21,7 +21,7 @@ void setup() {
   frameRate(30);
   size(1280, 1024);
   println(Serial.list());                                           // * Initialize Serial
-  myPort = new Serial(this, Serial.list()[1], 9600);                //   Communication with
+  myPort = new Serial(this, Serial.list()[0], 9600);                //   Communication with
   myPort.bufferUntil('\n'); 
   // The background image must be the same size as the parameters
   // into the size() method. In this program, the size of the image

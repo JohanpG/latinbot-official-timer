@@ -38,7 +38,7 @@ void setup()
     Serial.begin(9600); // Start serial communication at 9600 bps
     pinMode(PIN_DETECT, INPUT);             // This is where we read the IR detector
     pinMode(PIN_STATUS, OUTPUT);            // To show some status
-    attachInterrupt(0, irchanged, RISING);  // Here the magic is happening: On a CHANGE on Port 0 (Pin 2), 
+    attachInterrupt(digitalPinToInterrupt(PIN_DETECT), irchanged, RISING);  // Here the magic is happening: On a CHANGE on Port 0 (Pin 2), 
                                             // the irchanged function will interrupt whatever is going on
 }
  

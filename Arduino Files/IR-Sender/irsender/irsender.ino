@@ -11,7 +11,7 @@ void setup()
 {
   pinMode (LED, OUTPUT);
 
-  TCCR24A = bit (WGM20) | bit (WGM21) | bit (COM2B1); // fast PWM, clear OC2B on compare
+  TCCR2A = bit (WGM20) | bit (WGM21) | bit (COM2B1); // fast PWM, clear OC2B on compare
   TCCR2B = bit (WGM22) | bit (CS21);         // fast PWM, prescaler of 8
   OCR2A =  ((F_CPU / 8) / frequency) - 1;    // zero relative  
   OCR2B = ((OCR2A + 1) / 4) - 1;             // 50% duty cycle
